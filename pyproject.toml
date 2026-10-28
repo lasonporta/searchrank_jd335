@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lasonporta-searchrank_jd335"
+version = "0.1.0"
+description = "对内容做归一化与分片比对，找出搜索排序算法工程师·算子融合的收益边界上的重复项并按相似度归并"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "lasonporta" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://lasonporta.github.io"
+Repository = "https://github.com/lasonporta/searchrank_jd335"
+Issues = "https://github.com/lasonporta/searchrank_jd335/issues"
+
+[project.scripts]
+searchrank_jd335 = "searchrank_jd335:main"
+
+[tool.setuptools]
+py-modules = ["searchrank_jd335"]
